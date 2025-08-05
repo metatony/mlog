@@ -10,7 +10,7 @@ const FeaturedStoryCard = () => {
       <p className="card-title  ">
         Unveiling the Majestic Beauty of Mount Fuji
       </p>
-      <p className="card-description fw-lighter">
+      <p className="card-description fw-light">
         A journey to Japan’s Iconic Symbol and natural wonder. Discover the rich
         history, breathtaking landscapes, and cultural significance of this
         iconic landmark
