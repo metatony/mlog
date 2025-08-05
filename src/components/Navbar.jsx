@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav class="navbar navbar-expand-lg sticky-top ">
       <div class="container-fluid my-1">
         <a class="navbar-brand" href="#">
-          Mlog
+          Metatony Blog
         </a>
         <button
           class="navbar-toggler"
