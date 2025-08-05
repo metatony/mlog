@@ -7,7 +7,7 @@ const BlogPostsCard = (props) => {
       <img src={props.image} alt="" className="d-block d-md-none rounded-2" />
       <p className="card-header fw-light">{props.author}</p>
       <p className="card-title ">{props.title}</p>
-      <p className="card-description fw-lighter text-secondary">{props.description}</p>
+      <p className="card-description fw-lighter">{props.description}</p>
     </div>
   );
 };
