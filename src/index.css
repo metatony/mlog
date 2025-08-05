@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Zain", sans-serif;
+}
+
+body {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+nav{
+  background-color: white;
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer p {
+  font-size: 14px;
+  color: rgb(148, 148, 148);
+}
+
+footer span {
+  color: black;
+}
+
+@media (min-width: 768px) {
+  /* Medium and larger screens */
+
+  .centered-content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

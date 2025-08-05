@@ -1,0 +1,91 @@
+.header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.header-title {
+  font-size: 40px;
+}
+
+.header-description {
+  font-size: 20px;
+}
+
+.blog-name {
+  color: #6941c6;
+}
+
+.card-header {
+  color: #6941c6 !important;
+}
+
+.card-title {
+  font-weight: 400 !important;
+  font-size: 35px;
+}
+
+.card-description {
+  font-size: 16px;
+}
+
+.blog-count {
+  background-color: #f0eeee;
+  width: 32px;
+  height: 32px;
+}
+
+.blog-description {
+  width: 193px;
+}
+
+.blog-description-title {
+  font-size: 20px;
+}
+
+.blog-description-date {
+  font-size: 14px;
+  color: #6941c6;
+}
+
+.border-line {
+  border-color: #b5b5b5 !important;
+}
+
+/* MEDIUM AND LARGER SCREENS */
+@media (min-width: 768px) {
+  .header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .header-title {
+    font-size: 48px;
+  }
+
+  .header-description {
+    width: 453px;
+  }
+
+  .card-title {
+    font-weight: 400 !important;
+    font-size: 40px;
+    /* width: 473px; */
+  }
+
+  .card-description {
+    font-size: 20px;
+  }
+
+  .blog-description {
+    /* background-color: blue; */
+  }
+
+  .blog-description-title {
+    font-size: 24px;
+    /* background-color: red; */
+  }
+
+  .blog-description-date {
+    color: #6941c6;
+  }
+}

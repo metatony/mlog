@@ -1,0 +1,1 @@
+export const searchIcon = "https://res.cloudinary.com/de2vjcr29/image/upload/v1754402565/MagnifyingGlass_ilc46b.svg";
