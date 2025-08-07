@@ -4,8 +4,8 @@ import BlogPostsCard from "../../../components/BlogPostsCard";
 
 const SectionThree = () => {
   return (
-    <section class="container gap-5 mt-5">
-      <div class="row row-cols-1 row-cols-md-2">
+    <section className="container gap-5 mt-5">
+      <div className="row row-cols-1 row-cols-md-2">
         <BlogPostsCard
           title={"The Pulse of the City Unfolds on the Fast Lanes"}
           description={

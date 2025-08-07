@@ -9,12 +9,12 @@ import {
 
 const SectionTwo = () => {
   return (
-    <section class="container gap-5">
-      <div class="row row-cols-1 row-cols-md-2">
+    <section className="container gap-5">
+      <div className="row row-cols-1 row-cols-md-2">
         <FeaturedStoryCard />
 
-        <div class="col d-flex flex-column gap-2">
-          <p className="h1">Top Stories</p>
+        <div className="col d-flex flex-column gap-2">
+          <p className="h2">Top Stories</p>
 
           {/* columns */}
           <TopStoriesCard

@@ -13,9 +13,7 @@ export const GlobalProvider = ({ children }) => {
     console.log("Loaded API key:", apiKey);
 
     axios
-      .get(
-        `https://rubble-api-ai3c.vercel.app/${apiKey}`
-      )
+      .get(``)
 
       .then(function (response) {
         if (response.status !== 200) {
