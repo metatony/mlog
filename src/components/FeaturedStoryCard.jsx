@@ -7,7 +7,7 @@ const FeaturedStoryCard = () => {
       <img src={placeholder1} alt="" className="d-none d-md-block rounded-2" />
       <img src={placeholder2} alt="" className="d-block d-md-none rounded-2" />
       <p className="card-header fw-semibold">TRAVEL</p>
-      <p className="card-title  ">
+      <p className="card-title lh-sm">
         Unveiling the Majestic Beauty of Mount Fuji
       </p>
       <p className="card-description fw-light">

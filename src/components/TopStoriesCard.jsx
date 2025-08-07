@@ -12,7 +12,7 @@ const TopStoriesCard = (props) => {
 
           {/* blog description and date */}
           <div className="blog-description ms-3 ">
-            <p className="blog-description-title fw-normal">{props.title}</p>
+            <p className="blog-description-title fw-normal lh-sm">{props.title}</p>
             <p className="blog-description-date fw-light">John Smith • 24 Jan 2023</p>
           </div>
         </div>
