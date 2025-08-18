@@ -14,7 +14,7 @@ const SectionTwo = () => {
         <FeaturedStoryCard />
 
         <div className="col d-flex flex-column gap-2">
-          <p className="h2">Top Stories</p>
+          <h3 className="h2">Top Stories</h3>
 
           {/* columns */}
           <TopStoriesCard

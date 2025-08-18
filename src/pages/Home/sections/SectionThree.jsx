@@ -5,7 +5,7 @@ import BlogPostsCard from "../../../components/BlogPostsCard";
 const SectionThree = () => {
   return (
     <section className="container gap-5 mt-5">
-      <div className="row row-cols-1 row-cols-md-2">
+      <section className="row row-cols-1 row-cols-md-2">
         <BlogPostsCard
           title={"The Pulse of the City Unfolds on the Fast Lanes"}
           description={
@@ -22,7 +22,7 @@ const SectionThree = () => {
           author={"Alec Whitten • 17 Jan 2022"}
           image={placeholder7}
         />
-      </div>
+      </section>
     </section>
   );
 };
