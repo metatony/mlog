@@ -25,7 +25,7 @@
 }
 
 .card-description {
-  font-size: 16px;
+  font-size: 20px;
   color: rgb(89, 89, 89);
 }
 
@@ -44,7 +44,7 @@
 }
 
 .blog-description-date {
-  font-size: 14px;
+  font-size: 16px;
   color: #6941c6;
 }
 
@@ -73,21 +73,7 @@
     /* width: 473px; */
   }
 
-  .card-description {
-    font-size: 20px;
-    color: rgb(89, 89, 89);
-  }
-
-  .blog-description {
-    /* background-color: blue; */
-  }
-
   .blog-description-title {
     font-size: 24px;
-    /* background-color: red; */
-  }
-
-  .blog-description-date {
-    color: #6941c6;
   }
 }
