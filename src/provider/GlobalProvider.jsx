@@ -7,13 +7,19 @@ export const GlobalContext = createContext();
 export const GlobalProvider = ({ children }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const apiKey = import.meta.env.VITE_RUBBLE_API_KEY;
+
+  const spaceId = import.meta.env.VITE_CONTENTFUL_SPACE_ID;
+  const accessToken = import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN;
+  const environment = "master"; // or change if you use another env
+  const entryId = "4KgG6Bqkvsfrmy6JTbtMF0"; // your entry id
+  
+  // const apiKey = import.meta.env.VITE_RUBBLE_API_KEY;
 
   useEffect(() => {
-    console.log("Loaded API key:", apiKey);
+    console.log("Loaded API key:", `https://cdn.contentful.com/spaces/${spaceId}/environments/${environment}/entries/${entryId}?access_token=${accessToken}`);
 
     axios
-      .get(``)
+      .get(`https://cdn.contentful.com/spaces/${spaceId}/environments/${environment}/entries/${entryId}?access_token=${accessToken}`)
 
       .then(function (response) {
         if (response.status !== 200) {
@@ -31,7 +37,7 @@ export const GlobalProvider = ({ children }) => {
         console.error("Error fetching data:", error);
         setLoading(false);
       });
-  }, []);
+  }, [spaceId, accessToken]);
 
   return (
     <GlobalContext.Provider value={{ data, loading }}>

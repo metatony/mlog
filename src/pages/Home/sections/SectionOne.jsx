@@ -6,8 +6,7 @@ const SectionOne = () => {
       <p className="blog-name fw-normal">Metatony Blog</p>
       <h1 className="header-title fw-semibold">Stories & Ideas</h1>
       <p className="header-description fw-light">
-        Explore breathtaking landscapes, iconic landmarks, and hidden gems
-        around the globe
+        A mix of thoughts on coding, sailing, movies, and adventures—sharing stories and ideas from my journey.
       </p>
     </section>
   );
