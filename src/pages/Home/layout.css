@@ -12,7 +12,6 @@
   width: 300px;
 }
 
-
 .blog-name {
   color: #6941c6;
 }
@@ -54,6 +53,17 @@
   border-color: #b5b5b5 !important;
 }
 
+.featured-image {
+  max-width: 483px;
+  max-height: 271px;
+  object-fit: cover;
+}
+
+.thumbnail-image {
+  max-width: 100px;
+  height: 100px;
+}
+
 /* MEDIUM AND LARGER SCREENS */
 @media (min-width: 768px) {
   .header {
@@ -77,5 +87,6 @@
 
   .blog-description-title {
     font-size: 24px;
+    width: 255px;
   }
 }

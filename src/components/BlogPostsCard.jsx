@@ -1,13 +1,25 @@
 import React from "react";
 
-const BlogPostsCard = ({image, author, title, description}) => {
+const BlogPostsCard = ({ featuredImage, title, slug, date }) => {
+  
+  function formatDate(dateString) {
+    return new Intl.DateTimeFormat("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    }).format(new Date(dateString));
+  }
+
   return (
-    <article class="d-flex flex-column gap-2 gap-md-3 mt-3 col">
-      <img src={image} alt="image of highroad traffic during sunset" className="d-none d-md-block rounded-2" />
-      <img src={image} alt="image of highroad traffic during sunset" className="d-block d-md-none rounded-2" />
-      <p className="card-header fw-light">{author}</p>
+    <article className="d-flex flex-column gap-2 gap-md-3 mt-3 col">
+      <img
+        src={featuredImage}
+        alt="image of highroad traffic during sunset"
+        className="featured-image rounded-2"
+      />
+      <p className="card-header fw-light">Metatony | {formatDate(date)}</p>
       <p className="card-title lh-sm">{title}</p>
-      <p className="card-description fw-light">{description}</p>
+      <p className="card-description fw-light">{slug}</p>
     </article>
   );
 };

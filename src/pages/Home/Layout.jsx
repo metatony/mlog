@@ -14,7 +14,7 @@ const Layout = () => {
         description="Discover stories, ideas, and insights on travel, culture, and more—all in one place."
         name="Metatony Blog"
         type="website"
-       />
+      />
       {/* section header */}
       <SectionOne />
 
