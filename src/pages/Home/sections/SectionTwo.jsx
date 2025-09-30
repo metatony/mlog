@@ -28,7 +28,7 @@ const SectionTwo = () => {
           featuredImage={data[0]?.featuredImage}
         />
 
-        <div className="col d-flex flex-column gap-2 mt-3 mt-md-0">
+        <div className="col d-flex flex-column gap-2 gap-md-3 mt-3 mt-md-0">
           <h3 className="h2">Top Stories</h3>
 
           {/* columns */}
