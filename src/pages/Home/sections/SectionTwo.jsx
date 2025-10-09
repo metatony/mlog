@@ -21,15 +21,15 @@ const SectionTwo = () => {
 
   return (
     <section className="container gap-5 ">
-      <div className="row row-cols-1 row-cols-md-2">
+      <div className="row row-cols-1 row-cols-md-2 align-items-start ">
         <FeaturedStoryCard
           title={data[0]?.title}
           slug={data[0]?.slug}
           featuredImage={data[0]?.featuredImage}
         />
 
-        <div className="col d-flex flex-column gap-2 gap-md-3 mt-3 mt-sm-0  ">
-          <h3 style={{ backgroundColor: "#6941c6", color: "white" }} className="h2 ps-1 ps-sm-2">Top Stories</h3>
+        <div className="col d-flex flex-column gap-2 gap-md-3 mt-3 mt-sm-0">
+          <h3>Top Stories</h3>
 
           {/* columns */}
           {data.slice(1, 4).map(function (item, i) {

@@ -18,5 +18,3 @@ const FeaturedStoryCard = ({ featuredImage, title, slug }) => {
 };
 
 export default FeaturedStoryCard;
-
-// display-4 display-md-5
