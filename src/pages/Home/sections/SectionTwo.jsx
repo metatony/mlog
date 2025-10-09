@@ -28,8 +28,8 @@ const SectionTwo = () => {
           featuredImage={data[0]?.featuredImage}
         />
 
-        <div className="col d-flex flex-column gap-2 gap-md-3 mt-3 mt-md-0">
-          <h3 className="h2">Top Stories</h3>
+        <div className="col d-flex flex-column gap-2 gap-md-3 mt-3 mt-sm-0  ">
+          <h3 style={{ backgroundColor: "#6941c6", color: "white" }} className="h2 ps-1 ps-sm-2">Top Stories</h3>
 
           {/* columns */}
           {data.slice(1, 4).map(function (item, i) {
