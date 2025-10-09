@@ -14,7 +14,7 @@ const BlogPostsCard = ({ featuredImage, title, slug, date }) => {
       <img
         src={featuredImage}
         alt="image of highroad traffic during sunset"
-        className="featured-image rounded-2 h-50"
+        className="featured-image rounded-2"
       />
       <p className="card-header fw-light">Metatony | {formatDate(date)}</p>
       <p className="card-title lh-sm">{title}</p>

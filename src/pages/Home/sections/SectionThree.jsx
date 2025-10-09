@@ -11,8 +11,8 @@ const SectionThree = () => {
   }, []);
 
   return (
-    <section className="container gap-5 mt-5">
-      <section className="row row-cols-1 row-cols-md-2">
+    <section className="container mt-5">
+      <section className="row row-cols-1 row-cols-md-2 g-4">
         {data.slice(4).map(function (item) {
           return (
             <BlogPostsCard
