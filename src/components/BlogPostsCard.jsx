@@ -10,7 +10,7 @@ const BlogPostsCard = ({ featuredImage, title, slug, date }) => {
   }
 
   return (
-    <article className="d-flex flex-column gap-2 gap-md-3 mt-3 col">
+    <article className="d-flex flex-column gap-2 gap-md-3">
       <img
         src={featuredImage}
         alt="image of highroad traffic during sunset"

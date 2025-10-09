@@ -52,6 +52,7 @@
 }
 
 .featured-image {
+  display: block;
   max-width: 483px;
   max-height: 240px;
   height: 50%;

@@ -15,13 +15,14 @@ const SectionThree = () => {
       <section className="row row-cols-1 row-cols-md-2 g-4">
         {data.slice(4).map(function (item) {
           return (
-            <BlogPostsCard
-              key={item?.id}
-              title={item?.title}
-              slug={item?.slug}
-              date={item?.date}
-              featuredImage={item?.featuredImage}
-            />
+            <div className="col" key={item?.id}>
+              <BlogPostsCard
+                title={item?.title}
+                slug={item?.slug}
+                date={item?.date}
+                featuredImage={item?.featuredImage}
+              />
+            </div>
           );
         })}
       </section>
