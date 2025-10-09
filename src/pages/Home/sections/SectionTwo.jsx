@@ -35,7 +35,7 @@ const SectionTwo = () => {
           {data.slice(1, 4).map(function (item, i) {
             return (
               <TopStoriesCard
-              key={item?.id}
+                key={item?.id}
                 title={item?.title}
                 date={formatDate(item?.date)}
                 index={i}

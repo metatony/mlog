@@ -34,15 +34,12 @@
   background-color: #f0eeee;
   width: 32px;
   height: 32px;
-}
-
-.blog-description {
-  width: 193px;
+  min-width: 32px;
+  padding: 0;
 }
 
 .blog-description-title {
   font-size: 20px;
-  width: 180px;
 }
 
 .blog-description-date {
@@ -56,7 +53,7 @@
 
 .featured-image {
   max-width: 483px;
-  max-height: 271px;
+  max-height: 240px;
   object-fit: cover;
 }
 
@@ -83,11 +80,9 @@
   .card-title {
     font-weight: 400 !important;
     font-size: 40px;
-    /* width: 473px; */
   }
 
   .blog-description-title {
     font-size: 24px;
-    width: 255px;
   }
 }
