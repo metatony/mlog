@@ -16,7 +16,7 @@ const Blog = () => {
 
   return (
     <main className="container my-5">
-      <section className="d-flex flex-column gap-4">
+      <section className="d-flex flex-column">
         <div className="mb-4 text-center">
           <h1 className="card-title">{blogPage?.title}</h1>
         </div>
