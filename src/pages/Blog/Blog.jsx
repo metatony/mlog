@@ -16,19 +16,17 @@ const Blog = () => {
 
   return (
     <main className="container my-5">
-      <section>
+      <section className="d-flex flex-column gap-4">
         <div className="mb-4 text-center">
           <h1 className="card-title">{blogPage?.title}</h1>
         </div>
-        <div className="d-sm-none">
-          <img
-            className="rounded-2"
-            src={blogPage?.featuredImage}
-            height={"auto"}
-            width={"100%"}
-            alt=""
-          />
-        </div>
+        <img
+          className="d-sm-none rounded-2"
+          src={blogPage?.featuredImage}
+          height={"auto"}
+          width={"100%"}
+          alt=""
+        />
         <div className="card-description fs-4 fw-light lh-base mt-5 mt-sm-0">
           {documentToReactComponents(blogPage?.richText)}
         </div>
