@@ -13,7 +13,7 @@ const BlogPostsCard = ({ featuredImage, title, slug, date }) => {
     <article className="d-flex flex-column gap-2 gap-md-3">
       <img
         src={featuredImage}
-        alt="image of highroad traffic during sunset"
+        alt={title + " image"}
         className="featured-image rounded-2"
       />
       <p className="card-header fw-light">Metatony | {formatDate(date)}</p>

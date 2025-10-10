@@ -22,7 +22,7 @@ const TopStoriesCard = ({ title, featuredImage, date, index }) => {
         {/* blog image */}
         <img
           src={featuredImage}
-          alt={title}
+          alt={title + " image"}
           className="rounded-2 thumbnail-image"
         />
       </article>

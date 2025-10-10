@@ -23,6 +23,7 @@
 .card-title {
   font-weight: 400 !important;
   font-size: 35px;
+  color: black !important;
 }
 
 .card-description {
@@ -36,10 +37,12 @@
   height: 32px;
   min-width: 32px;
   padding: 0;
+  color: black !important;
 }
 
 .blog-description-title {
   font-size: 20px;
+  color: black !important;
 }
 
 .blog-description-date {
@@ -60,8 +63,8 @@
 }
 
 .thumbnail-image {
-  max-width: 100px;
-  height: 100px;
+  max-width: 30%;
+  height: auto;
 }
 
 /* MEDIUM AND LARGER SCREENS */

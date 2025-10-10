@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import TopStoriesCard from "../../../components/TopStoriesCard";
 import FeaturedStoryCard from "../../../components/FeaturedStoryCard";
 import useContentful from "../../../custom-hooks/useContentful";
+import { Link } from "react-router";
 
 const SectionTwo = () => {
   const [data, setData] = useState([]);
@@ -22,11 +23,17 @@ const SectionTwo = () => {
   return (
     <section className="container gap-5 ">
       <div className="row row-cols-1 row-cols-md-2 align-items-start ">
-        <FeaturedStoryCard
-          title={data[0]?.title}
-          slug={data[0]?.slug}
-          featuredImage={data[0]?.featuredImage}
-        />
+        <Link
+          to={`/blog/${data[0]?.id}`}
+          className="text-decoration-none"
+          key={data[0]?.id}
+        >
+          <FeaturedStoryCard
+            title={data[0]?.title}
+            slug={data[0]?.slug}
+            featuredImage={data[0]?.featuredImage}
+          />
+        </Link>
 
         <div className="col d-flex flex-column gap-2 gap-md-3 mt-3 mt-sm-0">
           <h3>Top Stories</h3>
@@ -34,13 +41,18 @@ const SectionTwo = () => {
           {/* columns */}
           {data.slice(1, 4).map(function (item, i) {
             return (
-              <TopStoriesCard
+              <Link
+                to={`/blog/${item.id}`}
+                className="text-decoration-none"
                 key={item?.id}
-                title={item?.title}
-                date={formatDate(item?.date)}
-                index={i}
-                featuredImage={item?.featuredImage}
-              />
+              >
+                <TopStoriesCard
+                  title={item?.title}
+                  date={formatDate(item?.date)}
+                  index={i}
+                  featuredImage={item?.featuredImage}
+                />
+              </Link>
             );
           })}
         </div>

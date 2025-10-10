@@ -5,7 +5,7 @@ const FeaturedStoryCard = ({ featuredImage, title, slug }) => {
     <article className="d-flex flex-column gap-3 col">
       <img
         src={featuredImage}
-        alt="mount fiji tower with beautiful blue sky"
+        alt={title + " image"}
         className="featured-image rounded-2 "
       />
 

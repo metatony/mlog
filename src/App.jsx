@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Layout from "./pages/Home/Layout";
 import About from "./pages/About/About";
 import { HelmetProvider } from "react-helmet-async";
+import Blog from "./pages/Blog/Blog";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout />} />
             <Route path="/about" element={<About />} />
+            <Route path="/blog/:id" element={<Blog />} />
           </Routes>
           <Footer />
         </BrowserRouter>
