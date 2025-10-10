@@ -23,12 +23,9 @@ const SectionTwo = () => {
   return (
     <section className="container gap-5 ">
       <div className="row row-cols-1 row-cols-md-2 align-items-start ">
-        <Link
-          to={`/blog/${data[0]?.id}`}
-          className="text-decoration-none"
-          key={data[0]?.id}
-        >
+        <Link to={`/blog/${data[0]?.id}`} className="text-decoration-none">
           <FeaturedStoryCard
+            key={data[0]?.id}
             title={data[0]?.title}
             slug={data[0]?.slug}
             featuredImage={data[0]?.featuredImage}

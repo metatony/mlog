@@ -29,10 +29,8 @@ const Blog = () => {
             alt=""
           />
         </div>
-        <div className="mt-5 mt-sm-0">
-          <p className="card-description fs-4 fw-light lh-base">
-            {documentToReactComponents(blogPage?.richText)}
-          </p>
+        <div className="card-description fs-4 fw-light lh-base mt-5 mt-sm-0">
+          {documentToReactComponents(blogPage?.richText)}
         </div>
       </section>
     </main>
