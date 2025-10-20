@@ -33,7 +33,7 @@ const SectionTwo = () => {
         </Link>
 
         <div className="col d-flex flex-column gap-2 gap-md-3 mt-3 mt-sm-0">
-          <h3 className="fw-bold">Top Stories</h3>
+          <h3 className="fw-bold mb-4 mb-sm-2">Top Stories</h3>
 
           {/* columns */}
           {data.slice(1, 4).map(function (item, i) {
