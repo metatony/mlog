@@ -5,10 +5,10 @@ import { searchIcon } from "../constants/icons";
 const Navbar = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg sticky-top fs-4">
+      <nav className="navbar navbar-expand-lg sticky-top fs-5  ">
         <div className="container-fluid my-1">
           <a className="navbar-brand " href="/">
-            MetaBlog
+            Metatony Blog
           </a>
           <button
             className="navbar-toggler"
