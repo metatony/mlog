@@ -14,7 +14,7 @@ const useContentful = () => {
       const entries = await client.getEntries({
         content_type: "webPosts",
         select: "fields",
-        order: "fields.title",
+        order: "-fields.date",
         include: 1,
       });
 

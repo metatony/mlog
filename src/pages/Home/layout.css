@@ -63,8 +63,8 @@
 }
 
 .thumbnail-image {
-  max-width: 30%;
-  height: auto;
+  max-width: 100px;
+  height: 100px;
 }
 
 /* MEDIUM AND LARGER SCREENS */
