@@ -32,8 +32,8 @@ const SectionTwo = () => {
           />
         </Link>
 
-        <div className="col d-flex flex-column gap-2 gap-md-3 mt-3 mt-sm-0">
-          <h3 className="fw-bold mb-4 mb-sm-2">Top Stories</h3>
+        <div className="col d-flex flex-column mt-2 mt-sm-0">
+          <h3 className="card-title mb-4 mb-sm-3">Top Stories</h3>
 
           {/* columns */}
           {data.slice(1, 4).map(function (item, i) {

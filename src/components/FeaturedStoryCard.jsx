@@ -9,8 +9,8 @@ const FeaturedStoryCard = ({ featuredImage, title, slug }) => {
         className="featured-image rounded-2 "
       />
 
-      <h2 className="card-title lh-sm">{title}</h2>
-      <p className="card-description fw-light">
+      <h2 className="card-title lh-lg lh-md-base">{title}</h2>
+      <p className="card-description fw-light lh-lg">
         {slug?.length > 135 ? slug.substring(0, 135) + "..." : slug}
       </p>
     </article>
