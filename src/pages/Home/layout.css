@@ -8,7 +8,7 @@
 }
 
 .header-description {
-  font-size: 14px;
+  font-size: 16px;
   width: 300px;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .card-description {
-  font-size: 14px;
+  font-size: 16px;
   color: rgb(89, 89, 89);
 }
 
@@ -43,6 +43,7 @@
 .blog-description-title {
   font-size: 16px;
   color: black !important;
+  font-weight: 500 !important;
 }
 
 .blog-description-date {
@@ -67,6 +68,11 @@
   height: 100px;
 }
 
+.blog-page-description {
+  font-size: 14px;
+  color: black !important;
+}
+
 /* MEDIUM AND LARGER SCREENS */
 @media (min-width: 768px) {
   .header {
@@ -88,6 +94,12 @@
   }
 
   .blog-description-title {
-    font-size: 16.5px;
+    font-size: 18px;
+    font-weight: 500 !important;
+  }
+
+  .blog-page-description {
+    font-size: 16px;
+    color: black !important;
   }
 }

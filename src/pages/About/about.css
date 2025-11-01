@@ -1,3 +1,7 @@
 .about-section {
   height: 72vh;
 }
+
+.card-description {
+  font-size: 14px;
+}

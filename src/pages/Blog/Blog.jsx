@@ -27,7 +27,7 @@ const Blog = () => {
           width={"100%"}
           alt=""
         />
-        <div className="card-description fs-4 fw-light lh-base mt-5 mt-sm-0">
+        <div className="blog-page-description fw-light lh-lg mt-5 mt-sm-0">
           {documentToReactComponents(blogPage?.richText)}
         </div>
       </section>
