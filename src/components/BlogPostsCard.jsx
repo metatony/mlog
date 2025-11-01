@@ -16,7 +16,7 @@ const BlogPostsCard = ({ featuredImage, title, slug, date }) => {
         alt={title + " image"}
         className="featured-image rounded-2"
       />
-      <p className="blog-description-date fw-light">Metatony • {formatDate(date)}</p>
+      <p className="blog-description-date">Metatony • {formatDate(date)}</p>
       <p className="card-title lh-lg">{title}</p>
       <p className="card-description fw-light lh-lg">
         {slug?.length > 135 ? slug.substring(0, 135) + "..." : slug}

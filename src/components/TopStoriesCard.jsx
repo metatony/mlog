@@ -15,7 +15,7 @@ const TopStoriesCard = ({ title, featuredImage, date, index }) => {
           {/* blog description and date */}
           <div className="blog-description">
             <h4 className="blog-description-title lh-lg">{title}</h4>
-            <p className="blog-description-date fw-light ">Metatony • {date}</p>
+            <p className="blog-description-date ">Metatony • {date}</p>
           </div>
         </div>
 
