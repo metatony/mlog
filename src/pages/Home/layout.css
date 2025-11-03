@@ -59,8 +59,8 @@
 .featured-image {
   display: block;
   max-width: 483px;
+  height: 240px;
   max-height: 240px;
-  height: 50%;
   object-fit: cover;
 }
 
