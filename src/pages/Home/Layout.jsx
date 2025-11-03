@@ -8,7 +8,7 @@ import SEO from "../../components/SEO";
 
 const Layout = () => {
   return (
-    <section className="">
+    <section className="container">
       <SEO
         title="Stories & Ideas | Metatony Blog"
         description="Discover stories, ideas, and insights on travel, culture, and more—all in one place."

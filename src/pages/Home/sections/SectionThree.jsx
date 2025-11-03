@@ -11,9 +11,8 @@ const SectionThree = () => {
     getBlogPosts().then((response) => setData(response));
   }, []);
 
-
   return (
-    <section className="container mt-5">
+    <section className="mt-5">
       <section className="row row-cols-1 row-cols-md-2 g-4">
         {data.slice(4).map(function (item) {
           return (

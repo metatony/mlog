@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import useContentful from "../../custom-hooks/useContentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import SEO from "../../components/SEO";
 
 const Blog = () => {
   const [data, setData] = useState([]);
@@ -16,6 +17,12 @@ const Blog = () => {
 
   return (
     <main className="container my-5">
+      <SEO
+        title={`${blogPage?.title} | Metatony Blog`}
+        description="Discover stories, ideas, and insights on travel, culture, and more—all in one place."
+        name="Metatony Blog"
+        type="website"
+      />
       <section className="d-flex flex-column">
         <div className="mb-4 text-center">
           <h1 className="card-title">{blogPage?.title}</h1>

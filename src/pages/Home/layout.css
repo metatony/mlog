@@ -27,7 +27,7 @@
 }
 
 .card-description {
-  font-size: 16px;
+  font-size: 16px !important;
   color: black !important;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .blog-description-date {
-  font-size: 12px;
+  font-size: 12px !important;
   font-weight: 500 !important;
   color: #6941c6;
 }
@@ -70,7 +70,7 @@
 }
 
 .blog-page-description {
-  font-size: 16px;
+  font-size: 16px !important;
   color: black !important;
 }
 
@@ -94,13 +94,18 @@
     font-size: 24px;
   }
 
+  .card-description {
+    font-size: 17px !important;
+    color: black !important;
+  }
+
   .blog-description-title {
     font-size: 18px;
     font-weight: 500 !important;
   }
 
   .blog-page-description {
-    font-size: 16px;
+    font-size: 16px !important;
     color: black !important;
   }
 }
