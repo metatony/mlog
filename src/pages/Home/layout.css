@@ -8,7 +8,7 @@
 }
 
 .header-description {
-  font-size: 16px;
+  font-size: 14px;
   width: 300px;
 }
 
@@ -22,12 +22,12 @@
 
 .card-title {
   font-weight: 500 !important;
-  font-size: 20px;
+  font-size: 18px;
   color: black !important;
 }
 
 .card-description {
-  font-size: 16px !important;
+  font-size: 14px !important;
   color: black !important;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .blog-description-title {
-  font-size: 16px;
+  font-size: 14px;
   color: black !important;
   font-weight: 500 !important;
 }
@@ -70,7 +70,7 @@
 }
 
 .blog-page-description {
-  font-size: 16px !important;
+  font-size: 14px !important;
   color: black !important;
 }
 
