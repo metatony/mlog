@@ -31,7 +31,7 @@ const SectionTwo = () => {
         />
       </Link>
 
-      <div className="col d-flex flex-column mt-2 mt-sm-0">
+      <div className="col d-flex flex-column mt-5  mt-sm-0">
         <h3 className="card-title mb-4 mb-sm-3">Top Stories</h3>
 
         {/* columns */}
