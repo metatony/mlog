@@ -8,7 +8,7 @@
 }
 
 .header-description {
-  font-size: 14px;
+  font-size: 15px;
   width: 300px;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .card-description {
-  font-size: 14px !important;
+  font-size: 15px !important;
   color: black !important;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .blog-page-description {
-  font-size: 14px !important;
+  font-size: 15px !important;
   color: black !important;
 }
 
@@ -87,6 +87,7 @@
 
   .header-description {
     width: 453px;
+     font-size: 17px;
   }
 
   .card-title {
@@ -100,12 +101,12 @@
   }
 
   .blog-description-title {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500 !important;
   }
 
   .blog-page-description {
-    font-size: 16px !important;
+    font-size: 17px !important;
     color: black !important;
   }
 }
