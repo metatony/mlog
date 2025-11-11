@@ -7,8 +7,8 @@ const Navbar = () => {
     <header>
       <nav className="navbar navbar-expand-lg sticky-top   ">
         <div className="container-fluid my-1">
-          <a className="navbar-brand " href="/">
-            MB
+          <a className="navbar-brand fw-bold " href="/">
+            MTv
           </a>
           <button
             className="navbar-toggler"
