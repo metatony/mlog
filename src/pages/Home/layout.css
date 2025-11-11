@@ -74,6 +74,16 @@
   color: black !important;
 }
 
+/* A BIT ABOVE SMALL SCREENS */
+@media (min-width: 460px) {
+  .featured-image {
+    display: block;
+    max-width: 483px;
+    height: 220px;
+    max-height: 240px;
+    object-fit: cover;
+  }
+}
 
 /* MEDIUM AND LARGER SCREENS */
 @media (min-width: 768px) {
@@ -93,16 +103,16 @@
 
   .card-title {
     font-weight: 500 !important;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .card-description {
-    font-size: 17px !important;
+    font-size: 16px !important;
     color: black !important;
   }
 
   .blog-description-title {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500 !important;
   }
 
