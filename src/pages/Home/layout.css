@@ -55,11 +55,10 @@
 .border-line {
   border-color: #b5b5b5 !important;
 }
-
 .featured-image {
   display: block;
   max-width: 483px;
-  height: 240px;
+  height: 179px;
   max-height: 240px;
   object-fit: cover;
 }
@@ -67,12 +66,14 @@
 .thumbnail-image {
   max-width: 100px;
   height: 100px;
+  object-fit: cover;
 }
 
 .blog-page-description {
   font-size: 15px !important;
   color: black !important;
 }
+
 
 /* MEDIUM AND LARGER SCREENS */
 @media (min-width: 768px) {
@@ -87,7 +88,7 @@
 
   .header-description {
     width: 453px;
-     font-size: 17px;
+    font-size: 17px;
   }
 
   .card-title {
@@ -108,5 +109,13 @@
   .blog-page-description {
     font-size: 17px !important;
     color: black !important;
+  }
+
+  .featured-image {
+    display: block;
+    max-width: 483px;
+    height: 240px;
+    max-height: 240px;
+    object-fit: cover;
   }
 }
