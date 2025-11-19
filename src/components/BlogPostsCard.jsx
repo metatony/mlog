@@ -11,11 +11,14 @@ const BlogPostsCard = ({ featuredImage, title, slug, date }) => {
 
   return (
     <article className="d-flex flex-column gap-2 gap-md-3">
-      <img
-        src={featuredImage}
-        alt={title + " image"}
-        className="featured-image rounded-2"
-      />
+      <div className="featured-image-container rounded-2">
+        <img
+          src={featuredImage}
+          alt={title + " image"}
+          className="featured-image rounded-2"
+        />
+      </div>
+
       <p className="blog-description-date">Metatony | {formatDate(date)}</p>
       <p className="card-title lh-lg">{title}</p>
       <p className="card-description fw-light lh-lg">

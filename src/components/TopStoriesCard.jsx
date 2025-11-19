@@ -20,11 +20,13 @@ const TopStoriesCard = ({ title, featuredImage, date, index }) => {
         </div>
 
         {/* blog image */}
-        <img
-          src={featuredImage}
-          alt={title + " image"}
-          className="rounded-2 thumbnail-image"
-        />
+        <div className="thumbnail-image-container rounded-2">
+          <img
+            src={featuredImage}
+            alt={title + " image"}
+            className="thumbnail-image"
+          />
+        </div>
       </article>
       <hr className="border-line border-1 " />
     </section>

@@ -27,13 +27,13 @@ const Blog = () => {
         <div className="mb-4 text-center">
           <h1 className="card-title">{blogPage?.title}</h1>
         </div>
-        <img
-          className="d-sm-none rounded-2"
-          src={blogPage?.featuredImage}
-          height={"auto"}
-          width={"100%"}
-          alt=""
-        />
+        <div className="d-sm-none featured-image-container overflow-hidden rounded-2 ">
+          <img
+            className="d-sm-none featured-image"
+            src={blogPage?.featuredImage}
+            alt={blogPage?.title + " image"}
+          />
+        </div>
         <div className="blog-page-description fw-light lh-lg mt-5 mt-sm-0">
           {documentToReactComponents(blogPage?.richText)}
         </div>
