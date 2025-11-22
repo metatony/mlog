@@ -25,7 +25,7 @@ const Blog = () => {
       />
       <section className="d-flex flex-column">
         <div className="mb-4 text-center">
-          <h1 className="card-title">{blogPage?.title}</h1>
+          <h1 className="card-title lh-lg ">{blogPage?.title}</h1>
         </div>
         <div className="d-sm-none featured-image-container overflow-hidden rounded-2 ">
           <img
