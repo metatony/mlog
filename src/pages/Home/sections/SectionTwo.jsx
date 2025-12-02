@@ -21,38 +21,45 @@ const SectionTwo = () => {
   }, []);
 
   return (
-    <section className="row row-cols-1 row-cols-md-2 align-items-start ">
-      <Link to={`/blog/${data[0]?.id}`} className="text-decoration-none">
-        <FeaturedStoryCard
-          key={data[0]?.id}
-          title={data[0]?.title}
-          slug={data[0]?.slug}
-          featuredImage={data[0]?.featuredImage}
-        />
-      </Link>
+    <div className="row row-cols-1 row-cols-md-2 align-items-start">
+      {/* Featured Article Section */}
+      <article className="col" role="article">
+        <h2 className="visually-hidden" id="featured-content">Featured Story</h2>
+        <Link to={`/blog/${data[0]?.id}`} className="text-decoration-none" aria-label={`Read featured article: ${data[0]?.title}`}>
+          <FeaturedStoryCard
+            key={data[0]?.id}
+            title={data[0]?.title}
+            slug={data[0]?.slug}
+            featuredImage={data[0]?.featuredImage}
+          />
+        </Link>
+      </article>
 
-      <div className="col d-flex flex-column mt-5 mt-sm-0">
-        <h3 className="card-title mb-4 mb-sm-3 fw-medium">Top Stories</h3>
-
-        {/* columns */}
-        {data.slice(1, 4).map(function (item, i) {
-          return (
-            <Link
-              to={`/blog/${item.id}`}
-              className="text-decoration-none"
-              key={item?.id}
-            >
-              <TopStoriesCard
-                title={item?.title}
-                date={formatDate(item?.date)}
-                index={i}
-                featuredImage={item?.featuredImage}
-              />
-            </Link>
-          );
-        })}
-      </div>
-    </section>
+      {/* Top Stories Section */}
+      <aside className="col d-flex flex-column mt-5 mt-sm-0" role="complementary">
+        <h2 className="card-title mb-4 mb-sm-3 fw-medium" id="top-stories">Top Stories</h2>
+        
+        <nav aria-labelledby="top-stories" role="navigation">
+          {data.slice(1, 4).map(function (item, i) {
+            return (
+              <Link
+                to={`/blog/${item.id}`}
+                className="text-decoration-none"
+                key={item?.id}
+                aria-label={`Read article: ${item?.title}`}
+              >
+                <TopStoriesCard
+                  title={item?.title}
+                  date={formatDate(item?.date)}
+                  index={i}
+                  featuredImage={item?.featuredImage}
+                />
+              </Link>
+            );
+          })}
+        </nav>
+      </aside>
+    </div>
   );
 };
 

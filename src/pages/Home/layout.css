@@ -88,6 +88,9 @@
   color: black !important;
 }
 
+.blog-publish-info {
+  font-size: 13px !important;
+}
 
 /* MEDIUM AND LARGER SCREENS */
 @media (min-width: 768px) {
@@ -124,5 +127,4 @@
     font-size: 17px !important;
     color: black !important;
   }
-
 }

@@ -8,22 +8,29 @@ import SEO from "../../components/SEO";
 
 const Layout = () => {
   return (
-    <section className="container">
+    <main className="container" role="main">
       <SEO
         title="Stories & Ideas | MetatonyVerse"
         description="A mix of my thoughts on coding, animes, movies, and sharing stories and ideas from my journey."
         name="MetatonyVerse"
         type="website"
       />
-      {/* section header */}
-      <SectionOne />
 
-      {/* section grid */}
-      <SectionTwo />
+      {/* Hero header section */}
+      <header>
+        <SectionOne />
+      </header>
 
-      {/* section 3 grid */}
-      <SectionThree />
-    </section>
+      {/* Featured content section */}
+      <section aria-labelledby="featured-content">
+        <SectionTwo />
+      </section>
+
+      {/* Additional articles section */}
+      <section aria-labelledby="more-articles">
+        <SectionThree />
+      </section>
+    </main>
   );
 };
 

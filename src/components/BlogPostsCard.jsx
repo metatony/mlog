@@ -9,21 +9,48 @@ const BlogPostsCard = ({ featuredImage, title, slug, date }) => {
     }).format(new Date(dateString));
   }
 
+  const truncatedSlug =
+    slug?.length > 145 ? slug.substring(0, 145) + "..." : slug;
+  const isoDate = new Date(date).toISOString();
+
   return (
-    <article className="d-flex flex-column gap-2 gap-md-3">
-      <div className="featured-image-container rounded-2">
+    <article
+      className="d-flex flex-column gap-2 gap-md-3"
+      itemScope
+      itemType="https://schema.org/BlogPosting"
+    >
+      {/* Featured image */}
+      <figure className="featured-image-container rounded-2">
         <img
           src={featuredImage}
-          alt={title + " image"}
+          alt={`Featured image for ${title}`}
           className="featured-image rounded-2"
+          itemProp="image"
+          loading="lazy"
         />
+      </figure>
+
+      {/* Article metadata */}
+      <div className="blog-description-date">
+        <span itemProp="author" itemScope itemType="https://schema.org/Person">
+          <span itemProp="name">Metatony</span>
+        </span>
+        {" | "}
+        <time itemProp="datePublished" dateTime={isoDate}>
+          {formatDate(date)}
+        </time>
       </div>
 
-      <p className="blog-description-date">Metatony | {formatDate(date)}</p>
-      <p className="card-title lh-lg">{title}</p>
-      <p className="card-description fw-light lh-lg">
-        {slug?.length > 145 ? slug.substring(0, 145) + "..." : slug}
-      </p>
+      {/* Article content */}
+      <header>
+        <h3 className="card-title lh-lg" itemProp="headline">
+          {title}
+        </h3>
+      </header>
+
+      <div className="card-description fw-light lh-lg" itemProp="description">
+        {truncatedSlug}
+      </div>
     </article>
   );
 };
