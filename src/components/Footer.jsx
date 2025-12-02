@@ -10,7 +10,7 @@ const Footer = () => {
           <span itemProp="author" itemScope itemType="https://schema.org/Person">
             <span itemProp="name">metatony</span>
           </span>
-          {" | designed by "}
+          {" | Designed by "}
           <span itemScope itemType="https://schema.org/Person">
             <span itemProp="name">mohammed</span>
           </span>
