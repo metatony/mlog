@@ -15,7 +15,7 @@ const BlogPostsCard = ({ featuredImage, title, slug, date }) => {
 
   return (
     <article
-      className="d-flex flex-column gap-2 gap-md-3"
+      className="d-flex flex-column gap-2 gap-md-3 mb-3"
       itemScope
       itemType="https://schema.org/BlogPosting"
     >
