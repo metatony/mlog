@@ -18,10 +18,10 @@ const Blog = () => {
   return (
     <main className="container my-5">
       <SEO
-        title={`${blogPage?.title} | Metatony Blog`}
-        description="Discover stories, ideas, and insights on travel, culture, and more—all in one place."
-        name="Metatony Blog"
-        type="website"
+        title={`${blogPage?.title} | MetatonyVerse Blog`}
+        description={blogPage?.slug}
+        name="MetatonyVerse"
+        type="article"
       />
       <section className="d-flex flex-column">
         <div className="mb-4 text-center">

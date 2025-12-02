@@ -10,9 +10,9 @@ const Layout = () => {
   return (
     <section className="container">
       <SEO
-        title="Stories & Ideas | Metatony Blog"
-        description="Discover stories, ideas, and insights on travel, culture, and more—all in one place."
-        name="Metatony Blog"
+        title="Stories & Ideas | MetatonyVerse"
+        description="A mix of my thoughts on coding, animes, movies, and sharing stories and ideas from my journey."
+        name="MetatonyVerse"
         type="website"
       />
       {/* section header */}
